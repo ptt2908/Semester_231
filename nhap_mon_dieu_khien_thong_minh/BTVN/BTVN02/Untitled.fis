@@ -1,0 +1,44 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=4
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='x1'
+Range=[-24 24]
+NumMFs=3
+MF1='NE':'trapmf',[-40 -24 -12 0]
+MF2='ZE':'trimf',[-12 0 12]
+MF3='PO':'trapmf',[0 12 24 50]
+
+[Input2]
+Name='x2'
+Range=[0 25]
+NumMFs=3
+MF1='LO':'trapmf',[-20 0 5 15]
+MF2='ME':'trimf',[5 15 25]
+MF3='HI':'trimf',[15 25 35]
+
+[Output1]
+Name='y'
+Range=[-12 24]
+NumMFs=5
+MF1='NE':'trimf',[-12 -6 0]
+MF2='ZE':'trimf',[-6 0 6]
+MF3='PS':'trimf',[0 6 12]
+MF4='PM':'trimf',[6 12 18]
+MF5='PB':'trimf',[12 18 24]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 4 (1) : 1
+2 1, 2 (1) : 1
+2 2, 3 (1) : 1

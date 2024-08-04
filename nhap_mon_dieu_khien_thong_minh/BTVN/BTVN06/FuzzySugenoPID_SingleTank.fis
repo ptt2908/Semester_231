@@ -1,0 +1,59 @@
+[System]
+Name='FuzzySugenoPID_SingleTank'
+Type='sugeno'
+Version=2.0
+NumInputs=1
+NumOutputs=3
+NumRules=5
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='Setpoint'
+Range=[0 3.14159265358979]
+NumMFs=5
+MF1='VERY_LOW':'trapmf',[-1.131 0 0.523598775598299 1.0471975511966]
+MF2='MEDIUM':'trimf',[1.0471975511966 1.5707963267949 2.0943951023932]
+MF3='HIGH':'trimf',[1.5707963267949 2.0943951023932 2.61799387799149]
+MF4='VERYHIGH':'trapmf',[2.0943951023932 2.61799387799149 3.142 3.77]
+MF5='LOW':'trimf',[0.523598775598299 1.0471975511966 1.5707963267949]
+
+[Output1]
+Name='Kp'
+Range=[0 1]
+NumMFs=5
+MF1='Kp1':'constant',[30]
+MF2='Kp2':'constant',[26]
+MF3='Kp3':'constant',[23.2]
+MF4='Kp4':'constant',[30]
+MF5='Kp5':'constant',[30]
+
+[Output2]
+Name='Ki'
+Range=[0 1]
+NumMFs=5
+MF1='Ki1':'constant',[2.6]
+MF2='Ki2':'constant',[3]
+MF3='Ki3':'constant',[3.2]
+MF4='Ki4':'constant',[3.3]
+MF5='Ki5':'constant',[0.38]
+
+[Output3]
+Name='Kd'
+Range=[0 1]
+NumMFs=5
+MF1='Kd5':'constant',[1.1]
+MF2='Kd2':'constant',[0.46]
+MF3='Kd3':'constant',[1.5]
+MF4='Kd4':'constant',[0.15]
+MF5='Kd1':'constant',[0.2]
+
+[Rules]
+1, 1 1 5 (1) : 1
+5, 2 2 2 (1) : 1
+2, 3 3 3 (1) : 1
+3, 4 4 4 (1) : 1
+4, 5 5 1 (1) : 1
