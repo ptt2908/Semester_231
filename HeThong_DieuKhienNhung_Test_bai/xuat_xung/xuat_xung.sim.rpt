@@ -1,0 +1,390 @@
+Simulator report for xuat_xung
+Fri Dec 22 16:55:15 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 50.0 ms       ;
+; Simulation Netlist Size     ; 104 nodes     ;
+; Simulation Coverage         ;      43.54 %  ;
+; Total Number of Transitions ; 742834        ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270F256A5 ;
++-----------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      43.54 % ;
+; Total nodes checked                                 ; 104          ;
+; Total output ports checked                          ; 147          ;
+; Total output ports with complete 1/0-value coverage ; 64           ;
+; Total output ports with no 1/0-value coverage       ; 82           ;
+; Total output ports with no 1-value coverage         ; 82           ;
+; Total output ports with no 0-value coverage         ; 83           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++--------------------------+------------------------------+------------------+
+; Node Name                ; Output Port Name             ; Output Port Type ;
++--------------------------+------------------------------+------------------+
+; |xuat_xung|PulseOut~reg0 ; |xuat_xung|PulseOut~reg0     ; regout           ;
+; |xuat_xung|Add0~70       ; |xuat_xung|Add0~70           ; combout          ;
+; |xuat_xung|Add0~70       ; |xuat_xung|Add0~72COUT1_162  ; cout1            ;
+; |xuat_xung|LessThan3~0   ; |xuat_xung|LessThan3~0       ; combout          ;
+; |xuat_xung|Add0~75       ; |xuat_xung|Add0~75           ; combout          ;
+; |xuat_xung|Add0~75       ; |xuat_xung|Add0~77           ; cout0            ;
+; |xuat_xung|Add0~80       ; |xuat_xung|Add0~80           ; combout          ;
+; |xuat_xung|Add0~80       ; |xuat_xung|Add0~82           ; cout0            ;
+; |xuat_xung|Add0~80       ; |xuat_xung|Add0~82COUT1_146  ; cout1            ;
+; |xuat_xung|Add0~85       ; |xuat_xung|Add0~85           ; combout          ;
+; |xuat_xung|Add0~85       ; |xuat_xung|Add0~87           ; cout             ;
+; |xuat_xung|Add0~90       ; |xuat_xung|Add0~90           ; combout          ;
+; |xuat_xung|Add0~90       ; |xuat_xung|Add0~92           ; cout0            ;
+; |xuat_xung|LessThan3~1   ; |xuat_xung|LessThan3~1       ; combout          ;
+; |xuat_xung|Add0~95       ; |xuat_xung|Add0~95           ; combout          ;
+; |xuat_xung|Add0~95       ; |xuat_xung|Add0~97           ; cout0            ;
+; |xuat_xung|Add0~100      ; |xuat_xung|Add0~100          ; combout          ;
+; |xuat_xung|Add0~100      ; |xuat_xung|Add0~102COUT1_160 ; cout1            ;
+; |xuat_xung|Add0~105      ; |xuat_xung|Add0~105          ; combout          ;
+; |xuat_xung|Add0~105      ; |xuat_xung|Add0~107          ; cout0            ;
+; |xuat_xung|Add0~110      ; |xuat_xung|Add0~110          ; combout          ;
+; |xuat_xung|Add0~110      ; |xuat_xung|Add0~112          ; cout             ;
+; |xuat_xung|Add0~115      ; |xuat_xung|Add0~115          ; combout          ;
+; |xuat_xung|Add0~115      ; |xuat_xung|Add0~117COUT1_156 ; cout1            ;
+; |xuat_xung|Add0~120      ; |xuat_xung|Add0~120          ; combout          ;
+; |xuat_xung|Add0~120      ; |xuat_xung|Add0~122COUT1_158 ; cout1            ;
+; |xuat_xung|LessThan0~0   ; |xuat_xung|LessThan0~0       ; combout          ;
+; |xuat_xung|LessThan3~2   ; |xuat_xung|LessThan3~2       ; combout          ;
+; |xuat_xung|LessThan4~0   ; |xuat_xung|LessThan4~0       ; combout          ;
+; |xuat_xung|LessThan4~1   ; |xuat_xung|LessThan4~1       ; combout          ;
+; |xuat_xung|LessThan0~1   ; |xuat_xung|LessThan0~1       ; combout          ;
+; |xuat_xung|LessThan4~2   ; |xuat_xung|LessThan4~2       ; combout          ;
+; |xuat_xung|LessThan4~3   ; |xuat_xung|LessThan4~3       ; combout          ;
+; |xuat_xung|PulseOut~0    ; |xuat_xung|PulseOut~0        ; combout          ;
+; |xuat_xung|LessThan1~0   ; |xuat_xung|LessThan1~0       ; combout          ;
+; |xuat_xung|LessThan1~1   ; |xuat_xung|LessThan1~1       ; combout          ;
+; |xuat_xung|LessThan1~2   ; |xuat_xung|LessThan1~2       ; combout          ;
+; |xuat_xung|LessThan2~2   ; |xuat_xung|LessThan2~2       ; combout          ;
+; |xuat_xung|LessThan0~2   ; |xuat_xung|LessThan0~2       ; combout          ;
+; |xuat_xung|LessThan2~3   ; |xuat_xung|LessThan2~3       ; combout          ;
+; |xuat_xung|LessThan0~3   ; |xuat_xung|LessThan0~3       ; combout          ;
+; |xuat_xung|PulseOut~2    ; |xuat_xung|PulseOut~2        ; combout          ;
+; |xuat_xung|Mux0~0        ; |xuat_xung|Mux0~0            ; combout          ;
+; |xuat_xung|LessThan5~4   ; |xuat_xung|LessThan5~4       ; combout          ;
+; |xuat_xung|LessThan5~5   ; |xuat_xung|LessThan5~5       ; combout          ;
+; |xuat_xung|LessThan6~4   ; |xuat_xung|LessThan6~4       ; combout          ;
+; |xuat_xung|LessThan6~5   ; |xuat_xung|LessThan6~5       ; combout          ;
+; |xuat_xung|cnt[10]       ; |xuat_xung|cnt[10]           ; regout           ;
+; |xuat_xung|cnt[2]        ; |xuat_xung|cnt[2]            ; regout           ;
+; |xuat_xung|cnt[0]        ; |xuat_xung|cnt[0]            ; regout           ;
+; |xuat_xung|cnt[1]        ; |xuat_xung|cnt[1]            ; regout           ;
+; |xuat_xung|cnt[3]        ; |xuat_xung|cnt[3]            ; regout           ;
+; |xuat_xung|cnt[4]        ; |xuat_xung|cnt[4]            ; regout           ;
+; |xuat_xung|cnt[9]        ; |xuat_xung|cnt[9]            ; regout           ;
+; |xuat_xung|cnt[5]        ; |xuat_xung|cnt[5]            ; regout           ;
+; |xuat_xung|cnt[6]        ; |xuat_xung|cnt[6]            ; regout           ;
+; |xuat_xung|cnt[7]        ; |xuat_xung|cnt[7]            ; regout           ;
+; |xuat_xung|cnt[8]        ; |xuat_xung|cnt[8]            ; regout           ;
+; |xuat_xung|cnt[24]~1     ; |xuat_xung|cnt[24]~1         ; combout          ;
+; |xuat_xung|cnt[24]~2     ; |xuat_xung|cnt[24]~2         ; combout          ;
+; |xuat_xung|cnt[24]~4     ; |xuat_xung|cnt[24]~4         ; combout          ;
+; |xuat_xung|cnt[24]~6     ; |xuat_xung|cnt[24]~6         ; combout          ;
+; |xuat_xung|clk           ; |xuat_xung|clk~corein        ; combout          ;
+; |xuat_xung|PulseOut      ; |xuat_xung|PulseOut          ; padio            ;
++--------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++------------------------+------------------------------+------------------+
+; Node Name              ; Output Port Name             ; Output Port Type ;
++------------------------+------------------------------+------------------+
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~0            ; combout          ;
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~2            ; cout0            ;
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~2COUT1_170   ; cout1            ;
+; |xuat_xung|Add0~5      ; |xuat_xung|Add0~5            ; combout          ;
+; |xuat_xung|Add0~5      ; |xuat_xung|Add0~7            ; cout             ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~10           ; combout          ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~12           ; cout0            ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~12COUT1_172  ; cout1            ;
+; |xuat_xung|Add0~15     ; |xuat_xung|Add0~15           ; combout          ;
+; |xuat_xung|Add0~15     ; |xuat_xung|Add0~17           ; cout             ;
+; |xuat_xung|LessThan5~0 ; |xuat_xung|LessThan5~0       ; combout          ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~20           ; combout          ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~22           ; cout0            ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~22COUT1_178  ; cout1            ;
+; |xuat_xung|LessThan5~1 ; |xuat_xung|LessThan5~1       ; combout          ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~25           ; combout          ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~27           ; cout0            ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~27COUT1_174  ; cout1            ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~30           ; combout          ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~32           ; cout0            ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~32COUT1_180  ; cout1            ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~35           ; combout          ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~37           ; cout0            ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~37COUT1_166  ; cout1            ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~40           ; combout          ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~42           ; cout0            ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~42COUT1_168  ; cout1            ;
+; |xuat_xung|LessThan6~0 ; |xuat_xung|LessThan6~0       ; combout          ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~45           ; combout          ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~47           ; cout0            ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~47COUT1_182  ; cout1            ;
+; |xuat_xung|Add0~50     ; |xuat_xung|Add0~50           ; combout          ;
+; |xuat_xung|LessThan2~0 ; |xuat_xung|LessThan2~0       ; combout          ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~55           ; combout          ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~57           ; cout0            ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~57COUT1_176  ; cout1            ;
+; |xuat_xung|LessThan2~1 ; |xuat_xung|LessThan2~1       ; combout          ;
+; |xuat_xung|Add0~60     ; |xuat_xung|Add0~60           ; combout          ;
+; |xuat_xung|Add0~60     ; |xuat_xung|Add0~62           ; cout             ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~65           ; combout          ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~67           ; cout0            ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~67COUT1_164  ; cout1            ;
+; |xuat_xung|Add0~70     ; |xuat_xung|Add0~72           ; cout0            ;
+; |xuat_xung|Add0~75     ; |xuat_xung|Add0~77COUT1_148  ; cout1            ;
+; |xuat_xung|Add0~90     ; |xuat_xung|Add0~92COUT1_150  ; cout1            ;
+; |xuat_xung|Add0~95     ; |xuat_xung|Add0~97COUT1_152  ; cout1            ;
+; |xuat_xung|Add0~100    ; |xuat_xung|Add0~102          ; cout0            ;
+; |xuat_xung|Add0~105    ; |xuat_xung|Add0~107COUT1_154 ; cout1            ;
+; |xuat_xung|Add0~115    ; |xuat_xung|Add0~117          ; cout0            ;
+; |xuat_xung|Add0~120    ; |xuat_xung|Add0~122          ; cout0            ;
+; |xuat_xung|LessThan1~3 ; |xuat_xung|LessThan1~3       ; combout          ;
+; |xuat_xung|LessThan2~4 ; |xuat_xung|LessThan2~4       ; combout          ;
+; |xuat_xung|PulseOut~1  ; |xuat_xung|PulseOut~1        ; combout          ;
+; |xuat_xung|LessThan5~2 ; |xuat_xung|LessThan5~2       ; combout          ;
+; |xuat_xung|LessThan5~3 ; |xuat_xung|LessThan5~3       ; combout          ;
+; |xuat_xung|LessThan5~6 ; |xuat_xung|LessThan5~6       ; combout          ;
+; |xuat_xung|LessThan5~7 ; |xuat_xung|LessThan5~7       ; combout          ;
+; |xuat_xung|LessThan5~8 ; |xuat_xung|LessThan5~8       ; combout          ;
+; |xuat_xung|LessThan6~1 ; |xuat_xung|LessThan6~1       ; combout          ;
+; |xuat_xung|LessThan6~2 ; |xuat_xung|LessThan6~2       ; combout          ;
+; |xuat_xung|LessThan6~3 ; |xuat_xung|LessThan6~3       ; combout          ;
+; |xuat_xung|LessThan5~9 ; |xuat_xung|LessThan5~9       ; combout          ;
+; |xuat_xung|LessThan6~6 ; |xuat_xung|LessThan6~6       ; combout          ;
+; |xuat_xung|LessThan6~7 ; |xuat_xung|LessThan6~7       ; combout          ;
+; |xuat_xung|PulseOut~3  ; |xuat_xung|PulseOut~3        ; combout          ;
+; |xuat_xung|cnt[15]     ; |xuat_xung|cnt[15]           ; regout           ;
+; |xuat_xung|cnt[16]     ; |xuat_xung|cnt[16]           ; regout           ;
+; |xuat_xung|cnt[17]     ; |xuat_xung|cnt[17]           ; regout           ;
+; |xuat_xung|cnt[21]     ; |xuat_xung|cnt[21]           ; regout           ;
+; |xuat_xung|cnt[20]     ; |xuat_xung|cnt[20]           ; regout           ;
+; |xuat_xung|cnt[18]     ; |xuat_xung|cnt[18]           ; regout           ;
+; |xuat_xung|cnt[22]     ; |xuat_xung|cnt[22]           ; regout           ;
+; |xuat_xung|cnt[13]     ; |xuat_xung|cnt[13]           ; regout           ;
+; |xuat_xung|cnt[14]     ; |xuat_xung|cnt[14]           ; regout           ;
+; |xuat_xung|cnt[23]     ; |xuat_xung|cnt[23]           ; regout           ;
+; |xuat_xung|cnt[19]     ; |xuat_xung|cnt[19]           ; regout           ;
+; |xuat_xung|cnt[11]     ; |xuat_xung|cnt[11]           ; regout           ;
+; |xuat_xung|cnt[12]     ; |xuat_xung|cnt[12]           ; regout           ;
+; |xuat_xung|cnt[24]~0   ; |xuat_xung|cnt[24]~0         ; combout          ;
+; |xuat_xung|cnt[24]~3   ; |xuat_xung|cnt[24]~3         ; combout          ;
+; |xuat_xung|cnt[24]~5   ; |xuat_xung|cnt[24]~5         ; combout          ;
+; |xuat_xung|mode[0]     ; |xuat_xung|mode[0]~corein    ; combout          ;
++------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++------------------------+------------------------------+------------------+
+; Node Name              ; Output Port Name             ; Output Port Type ;
++------------------------+------------------------------+------------------+
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~0            ; combout          ;
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~2            ; cout0            ;
+; |xuat_xung|Add0~0      ; |xuat_xung|Add0~2COUT1_170   ; cout1            ;
+; |xuat_xung|Add0~5      ; |xuat_xung|Add0~5            ; combout          ;
+; |xuat_xung|Add0~5      ; |xuat_xung|Add0~7            ; cout             ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~10           ; combout          ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~12           ; cout0            ;
+; |xuat_xung|Add0~10     ; |xuat_xung|Add0~12COUT1_172  ; cout1            ;
+; |xuat_xung|Add0~15     ; |xuat_xung|Add0~15           ; combout          ;
+; |xuat_xung|Add0~15     ; |xuat_xung|Add0~17           ; cout             ;
+; |xuat_xung|LessThan5~0 ; |xuat_xung|LessThan5~0       ; combout          ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~20           ; combout          ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~22           ; cout0            ;
+; |xuat_xung|Add0~20     ; |xuat_xung|Add0~22COUT1_178  ; cout1            ;
+; |xuat_xung|LessThan5~1 ; |xuat_xung|LessThan5~1       ; combout          ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~25           ; combout          ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~27           ; cout0            ;
+; |xuat_xung|Add0~25     ; |xuat_xung|Add0~27COUT1_174  ; cout1            ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~30           ; combout          ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~32           ; cout0            ;
+; |xuat_xung|Add0~30     ; |xuat_xung|Add0~32COUT1_180  ; cout1            ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~35           ; combout          ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~37           ; cout0            ;
+; |xuat_xung|Add0~35     ; |xuat_xung|Add0~37COUT1_166  ; cout1            ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~40           ; combout          ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~42           ; cout0            ;
+; |xuat_xung|Add0~40     ; |xuat_xung|Add0~42COUT1_168  ; cout1            ;
+; |xuat_xung|LessThan6~0 ; |xuat_xung|LessThan6~0       ; combout          ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~45           ; combout          ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~47           ; cout0            ;
+; |xuat_xung|Add0~45     ; |xuat_xung|Add0~47COUT1_182  ; cout1            ;
+; |xuat_xung|Add0~50     ; |xuat_xung|Add0~50           ; combout          ;
+; |xuat_xung|LessThan2~0 ; |xuat_xung|LessThan2~0       ; combout          ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~55           ; combout          ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~57           ; cout0            ;
+; |xuat_xung|Add0~55     ; |xuat_xung|Add0~57COUT1_176  ; cout1            ;
+; |xuat_xung|LessThan2~1 ; |xuat_xung|LessThan2~1       ; combout          ;
+; |xuat_xung|Add0~60     ; |xuat_xung|Add0~60           ; combout          ;
+; |xuat_xung|Add0~60     ; |xuat_xung|Add0~62           ; cout             ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~65           ; combout          ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~67           ; cout0            ;
+; |xuat_xung|Add0~65     ; |xuat_xung|Add0~67COUT1_164  ; cout1            ;
+; |xuat_xung|Add0~70     ; |xuat_xung|Add0~72           ; cout0            ;
+; |xuat_xung|Add0~75     ; |xuat_xung|Add0~77COUT1_148  ; cout1            ;
+; |xuat_xung|Add0~90     ; |xuat_xung|Add0~92COUT1_150  ; cout1            ;
+; |xuat_xung|Add0~95     ; |xuat_xung|Add0~97COUT1_152  ; cout1            ;
+; |xuat_xung|Add0~100    ; |xuat_xung|Add0~102          ; cout0            ;
+; |xuat_xung|Add0~105    ; |xuat_xung|Add0~107COUT1_154 ; cout1            ;
+; |xuat_xung|Add0~115    ; |xuat_xung|Add0~117          ; cout0            ;
+; |xuat_xung|Add0~120    ; |xuat_xung|Add0~122          ; cout0            ;
+; |xuat_xung|LessThan1~3 ; |xuat_xung|LessThan1~3       ; combout          ;
+; |xuat_xung|LessThan2~4 ; |xuat_xung|LessThan2~4       ; combout          ;
+; |xuat_xung|PulseOut~1  ; |xuat_xung|PulseOut~1        ; combout          ;
+; |xuat_xung|LessThan5~2 ; |xuat_xung|LessThan5~2       ; combout          ;
+; |xuat_xung|LessThan5~3 ; |xuat_xung|LessThan5~3       ; combout          ;
+; |xuat_xung|LessThan5~6 ; |xuat_xung|LessThan5~6       ; combout          ;
+; |xuat_xung|LessThan5~7 ; |xuat_xung|LessThan5~7       ; combout          ;
+; |xuat_xung|LessThan5~8 ; |xuat_xung|LessThan5~8       ; combout          ;
+; |xuat_xung|LessThan6~1 ; |xuat_xung|LessThan6~1       ; combout          ;
+; |xuat_xung|LessThan6~2 ; |xuat_xung|LessThan6~2       ; combout          ;
+; |xuat_xung|LessThan6~3 ; |xuat_xung|LessThan6~3       ; combout          ;
+; |xuat_xung|LessThan5~9 ; |xuat_xung|LessThan5~9       ; combout          ;
+; |xuat_xung|LessThan6~6 ; |xuat_xung|LessThan6~6       ; combout          ;
+; |xuat_xung|LessThan6~7 ; |xuat_xung|LessThan6~7       ; combout          ;
+; |xuat_xung|PulseOut~3  ; |xuat_xung|PulseOut~3        ; combout          ;
+; |xuat_xung|cnt[15]     ; |xuat_xung|cnt[15]           ; regout           ;
+; |xuat_xung|cnt[16]     ; |xuat_xung|cnt[16]           ; regout           ;
+; |xuat_xung|cnt[17]     ; |xuat_xung|cnt[17]           ; regout           ;
+; |xuat_xung|cnt[21]     ; |xuat_xung|cnt[21]           ; regout           ;
+; |xuat_xung|cnt[20]     ; |xuat_xung|cnt[20]           ; regout           ;
+; |xuat_xung|cnt[18]     ; |xuat_xung|cnt[18]           ; regout           ;
+; |xuat_xung|cnt[22]     ; |xuat_xung|cnt[22]           ; regout           ;
+; |xuat_xung|cnt[13]     ; |xuat_xung|cnt[13]           ; regout           ;
+; |xuat_xung|cnt[14]     ; |xuat_xung|cnt[14]           ; regout           ;
+; |xuat_xung|cnt[23]     ; |xuat_xung|cnt[23]           ; regout           ;
+; |xuat_xung|cnt[19]     ; |xuat_xung|cnt[19]           ; regout           ;
+; |xuat_xung|cnt[11]     ; |xuat_xung|cnt[11]           ; regout           ;
+; |xuat_xung|cnt[12]     ; |xuat_xung|cnt[12]           ; regout           ;
+; |xuat_xung|cnt[24]~0   ; |xuat_xung|cnt[24]~0         ; combout          ;
+; |xuat_xung|cnt[24]~3   ; |xuat_xung|cnt[24]~3         ; combout          ;
+; |xuat_xung|cnt[24]~5   ; |xuat_xung|cnt[24]~5         ; combout          ;
+; |xuat_xung|mode[1]     ; |xuat_xung|mode[1]~corein    ; combout          ;
+; |xuat_xung|mode[0]     ; |xuat_xung|mode[0]~corein    ; combout          ;
++------------------------+------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 22 16:55:09 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off xuat_xung -c xuat_xung
+Info: Using vector source file "D:/HeThong_DieuKhienNhung_Test_bai/xuat_xung/xuat_xung.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      43.54 %
+Info: Number of transitions in simulation is 742834
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Fri Dec 22 16:55:15 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+
+

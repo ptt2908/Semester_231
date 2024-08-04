@@ -1,0 +1,4 @@
+set tool_name "Active-HDL (Verilog)"
+set corner_file_list {
+	{{"Slow Model"} {non_blocking.vo non_blocking_v.sdo}}
+}

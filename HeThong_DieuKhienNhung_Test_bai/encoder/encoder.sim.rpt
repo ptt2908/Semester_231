@@ -1,0 +1,435 @@
+Simulator report for encoder
+Wed Dec 20 23:41:24 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 50.0 ms       ;
+; Simulation Netlist Size     ; 111 nodes     ;
+; Simulation Coverage         ;      43.82 %  ;
+; Total Number of Transitions ; 665629        ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270T144A5 ;
++-----------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      43.82 % ;
+; Total nodes checked                                 ; 111          ;
+; Total output ports checked                          ; 178          ;
+; Total output ports with complete 1/0-value coverage ; 78           ;
+; Total output ports with no 1/0-value coverage       ; 96           ;
+; Total output ports with no 1-value coverage         ; 96           ;
+; Total output ports with no 0-value coverage         ; 100          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                          ;
++-----------------------+---------------------------+------------------+
+; Node Name             ; Output Port Name          ; Output Port Type ;
++-----------------------+---------------------------+------------------+
+; |encoder|temp[0]~reg0 ; |encoder|temp[0]~reg0     ; regout           ;
+; |encoder|temp[1]~reg0 ; |encoder|temp[1]~reg0     ; regout           ;
+; |encoder|temp[2]~reg0 ; |encoder|temp[2]~reg0     ; regout           ;
+; |encoder|temp[3]~reg0 ; |encoder|temp[3]~reg0     ; regout           ;
+; |encoder|D[0]~reg0    ; |encoder|Add1~0           ; combout          ;
+; |encoder|D[0]~reg0    ; |encoder|Add1~2           ; cout0            ;
+; |encoder|D[0]~reg0    ; |encoder|Add1~2COUT1_94   ; cout1            ;
+; |encoder|Add0~0       ; |encoder|Add0~0           ; combout          ;
+; |encoder|LessThan0~0  ; |encoder|LessThan0~0      ; combout          ;
+; |encoder|Add0~10      ; |encoder|Add0~10          ; combout          ;
+; |encoder|Add0~10      ; |encoder|Add0~12COUT1_98  ; cout1            ;
+; |encoder|Add0~15      ; |encoder|Add0~15          ; combout          ;
+; |encoder|Add0~15      ; |encoder|Add0~17COUT1_100 ; cout1            ;
+; |encoder|Add0~20      ; |encoder|Add0~20          ; combout          ;
+; |encoder|Add0~20      ; |encoder|Add0~22COUT1_102 ; cout1            ;
+; |encoder|LessThan0~1  ; |encoder|LessThan0~1      ; combout          ;
+; |encoder|Add0~25      ; |encoder|Add0~25          ; combout          ;
+; |encoder|Add0~25      ; |encoder|Add0~27          ; cout             ;
+; |encoder|Add0~30      ; |encoder|Add0~30          ; combout          ;
+; |encoder|Add0~30      ; |encoder|Add0~32COUT1_104 ; cout1            ;
+; |encoder|LessThan0~2  ; |encoder|LessThan0~2      ; combout          ;
+; |encoder|Add0~35      ; |encoder|Add0~35          ; combout          ;
+; |encoder|Add0~35      ; |encoder|Add0~37          ; cout0            ;
+; |encoder|Add0~40      ; |encoder|Add0~40          ; combout          ;
+; |encoder|Add0~40      ; |encoder|Add0~42          ; cout             ;
+; |encoder|LessThan1~0  ; |encoder|LessThan1~0      ; combout          ;
+; |encoder|Add0~45      ; |encoder|Add0~45          ; combout          ;
+; |encoder|Add0~45      ; |encoder|Add0~47          ; cout0            ;
+; |encoder|LessThan0~3  ; |encoder|LessThan0~3      ; combout          ;
+; |encoder|Add0~50      ; |encoder|Add0~50          ; combout          ;
+; |encoder|Add0~50      ; |encoder|Add0~52          ; cout0            ;
+; |encoder|Add0~50      ; |encoder|Add0~52COUT1_88  ; cout1            ;
+; |encoder|Add0~55      ; |encoder|Add0~55          ; combout          ;
+; |encoder|Add0~55      ; |encoder|Add0~57          ; cout             ;
+; |encoder|Add0~60      ; |encoder|Add0~60          ; combout          ;
+; |encoder|Add0~60      ; |encoder|Add0~62          ; cout0            ;
+; |encoder|LessThan0~4  ; |encoder|LessThan0~4      ; combout          ;
+; |encoder|Add0~65      ; |encoder|Add0~65          ; combout          ;
+; |encoder|Add0~65      ; |encoder|Add0~67          ; cout0            ;
+; |encoder|Add0~70      ; |encoder|Add0~70          ; combout          ;
+; |encoder|Add0~70      ; |encoder|Add0~72          ; cout0            ;
+; |encoder|LessThan0~5  ; |encoder|LessThan0~5      ; combout          ;
+; |encoder|Equal1~0     ; |encoder|Equal1~0         ; combout          ;
+; |encoder|D[1]~reg0    ; |encoder|Add1~5           ; combout          ;
+; |encoder|D[1]~reg0    ; |encoder|Add1~7           ; cout0            ;
+; |encoder|D[1]~reg0    ; |encoder|Add1~7COUT1_96   ; cout1            ;
+; |encoder|D[2]~reg0    ; |encoder|Add1~10          ; combout          ;
+; |encoder|D[2]~reg0    ; |encoder|Add1~12          ; cout             ;
+; |encoder|D[3]~reg0    ; |encoder|Add1~15          ; combout          ;
+; |encoder|D[3]~reg0    ; |encoder|Add1~17COUT1_98  ; cout1            ;
+; |encoder|D[4]~reg0    ; |encoder|Add1~20          ; combout          ;
+; |encoder|LessThan0~6  ; |encoder|LessThan0~6      ; combout          ;
+; |encoder|LessThan1~1  ; |encoder|LessThan1~1      ; combout          ;
+; |encoder|LessThan1~2  ; |encoder|LessThan1~2      ; combout          ;
+; |encoder|LessThan1~3  ; |encoder|LessThan1~3      ; combout          ;
+; |encoder|LessThan1~4  ; |encoder|LessThan1~4      ; combout          ;
+; |encoder|PRE_ENCA     ; |encoder|Equal0~0         ; combout          ;
+; |encoder|cnt[13]      ; |encoder|cnt[13]          ; regout           ;
+; |encoder|cnt[7]       ; |encoder|cnt[7]           ; regout           ;
+; |encoder|cnt[8]       ; |encoder|cnt[8]           ; regout           ;
+; |encoder|cnt[9]       ; |encoder|cnt[9]           ; regout           ;
+; |encoder|cnt[11]      ; |encoder|cnt[11]          ; regout           ;
+; |encoder|cnt[10]      ; |encoder|cnt[10]          ; regout           ;
+; |encoder|cnt[5]       ; |encoder|cnt[5]           ; regout           ;
+; |encoder|cnt[6]       ; |encoder|cnt[6]           ; regout           ;
+; |encoder|cnt[4]       ; |encoder|cnt[4]           ; regout           ;
+; |encoder|cnt[0]       ; |encoder|cnt[0]           ; regout           ;
+; |encoder|cnt[1]       ; |encoder|cnt[1]           ; regout           ;
+; |encoder|cnt[2]       ; |encoder|cnt[2]           ; regout           ;
+; |encoder|cnt[3]       ; |encoder|cnt[3]           ; regout           ;
+; |encoder|cnt[12]      ; |encoder|cnt[12]          ; regout           ;
+; |encoder|clk          ; |encoder|clk~corein       ; combout          ;
+; |encoder|ENCA         ; |encoder|ENCA~corein      ; combout          ;
+; |encoder|clk1         ; |encoder|clk1             ; padio            ;
+; |encoder|temp[0]      ; |encoder|temp[0]          ; padio            ;
+; |encoder|temp[1]      ; |encoder|temp[1]          ; padio            ;
+; |encoder|temp[2]      ; |encoder|temp[2]          ; padio            ;
+; |encoder|temp[3]      ; |encoder|temp[3]          ; padio            ;
++-----------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                              ;
++------------------------+---------------------------+------------------+
+; Node Name              ; Output Port Name          ; Output Port Type ;
++------------------------+---------------------------+------------------+
+; |encoder|temp[4]~reg0  ; |encoder|temp[4]~reg0     ; regout           ;
+; |encoder|temp[5]~reg0  ; |encoder|temp[5]~reg0     ; regout           ;
+; |encoder|temp[6]~reg0  ; |encoder|temp[6]~reg0     ; regout           ;
+; |encoder|temp[7]~reg0  ; |encoder|temp[7]~reg0     ; regout           ;
+; |encoder|temp[8]~reg0  ; |encoder|temp[8]~reg0     ; regout           ;
+; |encoder|temp[9]~reg0  ; |encoder|temp[9]~reg0     ; regout           ;
+; |encoder|temp[10]~reg0 ; |encoder|temp[10]~reg0    ; regout           ;
+; |encoder|temp[11]~reg0 ; |encoder|temp[11]~reg0    ; regout           ;
+; |encoder|temp[12]~reg0 ; |encoder|temp[12]~reg0    ; regout           ;
+; |encoder|temp[13]~reg0 ; |encoder|temp[13]~reg0    ; regout           ;
+; |encoder|temp[14]~reg0 ; |encoder|temp[14]~reg0    ; regout           ;
+; |encoder|temp[15]~reg0 ; |encoder|temp[15]~reg0    ; regout           ;
+; |encoder|D[0]~reg0     ; |encoder|D[0]~reg0        ; regout           ;
+; |encoder|Add0~0        ; |encoder|Add0~2           ; cout0            ;
+; |encoder|Add0~0        ; |encoder|Add0~2COUT1_108  ; cout1            ;
+; |encoder|Add0~5        ; |encoder|Add0~5           ; combout          ;
+; |encoder|Add0~10       ; |encoder|Add0~12          ; cout0            ;
+; |encoder|Add0~15       ; |encoder|Add0~17          ; cout0            ;
+; |encoder|Add0~20       ; |encoder|Add0~22          ; cout0            ;
+; |encoder|Add0~30       ; |encoder|Add0~32          ; cout0            ;
+; |encoder|Add0~35       ; |encoder|Add0~37COUT1_96  ; cout1            ;
+; |encoder|Add0~45       ; |encoder|Add0~47COUT1_94  ; cout1            ;
+; |encoder|Add0~60       ; |encoder|Add0~62COUT1_90  ; cout1            ;
+; |encoder|Add0~65       ; |encoder|Add0~67COUT1_92  ; cout1            ;
+; |encoder|Add0~70       ; |encoder|Add0~72COUT1_106 ; cout1            ;
+; |encoder|D[2]~reg0     ; |encoder|D[2]~reg0        ; regout           ;
+; |encoder|D[3]~reg0     ; |encoder|Add1~17          ; cout0            ;
+; |encoder|D[4]~reg0     ; |encoder|D[4]~reg0        ; regout           ;
+; |encoder|D[4]~reg0     ; |encoder|Add1~22          ; cout0            ;
+; |encoder|D[4]~reg0     ; |encoder|Add1~22COUT1_100 ; cout1            ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~25          ; combout          ;
+; |encoder|D[5]~reg0     ; |encoder|D[5]~reg0        ; regout           ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~27          ; cout0            ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~27COUT1_102 ; cout1            ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~30          ; combout          ;
+; |encoder|D[6]~reg0     ; |encoder|D[6]~reg0        ; regout           ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~32          ; cout0            ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~32COUT1_104 ; cout1            ;
+; |encoder|D[7]~reg0     ; |encoder|Add1~35          ; combout          ;
+; |encoder|D[7]~reg0     ; |encoder|D[7]~reg0        ; regout           ;
+; |encoder|D[7]~reg0     ; |encoder|Add1~37          ; cout             ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~40          ; combout          ;
+; |encoder|D[8]~reg0     ; |encoder|D[8]~reg0        ; regout           ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~42          ; cout0            ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~42COUT1_106 ; cout1            ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~45          ; combout          ;
+; |encoder|D[9]~reg0     ; |encoder|D[9]~reg0        ; regout           ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~47          ; cout0            ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~47COUT1_108 ; cout1            ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~50          ; combout          ;
+; |encoder|D[10]~reg0    ; |encoder|D[10]~reg0       ; regout           ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~52          ; cout0            ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~52COUT1_110 ; cout1            ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~55          ; combout          ;
+; |encoder|D[11]~reg0    ; |encoder|D[11]~reg0       ; regout           ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~57          ; cout0            ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~57COUT1_112 ; cout1            ;
+; |encoder|D[12]~reg0    ; |encoder|Add1~60          ; combout          ;
+; |encoder|D[12]~reg0    ; |encoder|D[12]~reg0       ; regout           ;
+; |encoder|D[12]~reg0    ; |encoder|Add1~62          ; cout             ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~65          ; combout          ;
+; |encoder|D[13]~reg0    ; |encoder|D[13]~reg0       ; regout           ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~67          ; cout0            ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~67COUT1_114 ; cout1            ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~70          ; combout          ;
+; |encoder|D[14]~reg0    ; |encoder|D[14]~reg0       ; regout           ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~72          ; cout0            ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~72COUT1_116 ; cout1            ;
+; |encoder|D[15]~reg0    ; |encoder|Add1~75          ; combout          ;
+; |encoder|D[15]~reg0    ; |encoder|D[15]~reg0       ; regout           ;
+; |encoder|D[0]          ; |encoder|D[0]             ; padio            ;
+; |encoder|D[2]          ; |encoder|D[2]             ; padio            ;
+; |encoder|D[4]          ; |encoder|D[4]             ; padio            ;
+; |encoder|D[5]          ; |encoder|D[5]             ; padio            ;
+; |encoder|D[6]          ; |encoder|D[6]             ; padio            ;
+; |encoder|D[7]          ; |encoder|D[7]             ; padio            ;
+; |encoder|D[8]          ; |encoder|D[8]             ; padio            ;
+; |encoder|D[9]          ; |encoder|D[9]             ; padio            ;
+; |encoder|D[10]         ; |encoder|D[10]            ; padio            ;
+; |encoder|D[11]         ; |encoder|D[11]            ; padio            ;
+; |encoder|D[12]         ; |encoder|D[12]            ; padio            ;
+; |encoder|D[13]         ; |encoder|D[13]            ; padio            ;
+; |encoder|D[14]         ; |encoder|D[14]            ; padio            ;
+; |encoder|D[15]         ; |encoder|D[15]            ; padio            ;
+; |encoder|temp[4]       ; |encoder|temp[4]          ; padio            ;
+; |encoder|temp[5]       ; |encoder|temp[5]          ; padio            ;
+; |encoder|temp[6]       ; |encoder|temp[6]          ; padio            ;
+; |encoder|temp[7]       ; |encoder|temp[7]          ; padio            ;
+; |encoder|temp[8]       ; |encoder|temp[8]          ; padio            ;
+; |encoder|temp[9]       ; |encoder|temp[9]          ; padio            ;
+; |encoder|temp[10]      ; |encoder|temp[10]         ; padio            ;
+; |encoder|temp[11]      ; |encoder|temp[11]         ; padio            ;
+; |encoder|temp[12]      ; |encoder|temp[12]         ; padio            ;
+; |encoder|temp[13]      ; |encoder|temp[13]         ; padio            ;
+; |encoder|temp[14]      ; |encoder|temp[14]         ; padio            ;
+; |encoder|temp[15]      ; |encoder|temp[15]         ; padio            ;
++------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                              ;
++------------------------+---------------------------+------------------+
+; Node Name              ; Output Port Name          ; Output Port Type ;
++------------------------+---------------------------+------------------+
+; |encoder|temp[4]~reg0  ; |encoder|temp[4]~reg0     ; regout           ;
+; |encoder|temp[5]~reg0  ; |encoder|temp[5]~reg0     ; regout           ;
+; |encoder|temp[6]~reg0  ; |encoder|temp[6]~reg0     ; regout           ;
+; |encoder|temp[7]~reg0  ; |encoder|temp[7]~reg0     ; regout           ;
+; |encoder|temp[8]~reg0  ; |encoder|temp[8]~reg0     ; regout           ;
+; |encoder|temp[9]~reg0  ; |encoder|temp[9]~reg0     ; regout           ;
+; |encoder|temp[10]~reg0 ; |encoder|temp[10]~reg0    ; regout           ;
+; |encoder|temp[11]~reg0 ; |encoder|temp[11]~reg0    ; regout           ;
+; |encoder|temp[12]~reg0 ; |encoder|temp[12]~reg0    ; regout           ;
+; |encoder|temp[13]~reg0 ; |encoder|temp[13]~reg0    ; regout           ;
+; |encoder|temp[14]~reg0 ; |encoder|temp[14]~reg0    ; regout           ;
+; |encoder|temp[15]~reg0 ; |encoder|temp[15]~reg0    ; regout           ;
+; |encoder|D[0]~reg0     ; |encoder|D[0]~reg0        ; regout           ;
+; |encoder|Add0~0        ; |encoder|Add0~2           ; cout0            ;
+; |encoder|Add0~0        ; |encoder|Add0~2COUT1_108  ; cout1            ;
+; |encoder|Add0~5        ; |encoder|Add0~5           ; combout          ;
+; |encoder|Add0~10       ; |encoder|Add0~12          ; cout0            ;
+; |encoder|Add0~15       ; |encoder|Add0~17          ; cout0            ;
+; |encoder|Add0~20       ; |encoder|Add0~22          ; cout0            ;
+; |encoder|Add0~30       ; |encoder|Add0~32          ; cout0            ;
+; |encoder|Add0~35       ; |encoder|Add0~37COUT1_96  ; cout1            ;
+; |encoder|Add0~45       ; |encoder|Add0~47COUT1_94  ; cout1            ;
+; |encoder|Add0~60       ; |encoder|Add0~62COUT1_90  ; cout1            ;
+; |encoder|Add0~65       ; |encoder|Add0~67COUT1_92  ; cout1            ;
+; |encoder|Add0~70       ; |encoder|Add0~72COUT1_106 ; cout1            ;
+; |encoder|D[1]~reg0     ; |encoder|D[1]~reg0        ; regout           ;
+; |encoder|D[2]~reg0     ; |encoder|D[2]~reg0        ; regout           ;
+; |encoder|D[3]~reg0     ; |encoder|D[3]~reg0        ; regout           ;
+; |encoder|D[3]~reg0     ; |encoder|Add1~17          ; cout0            ;
+; |encoder|D[4]~reg0     ; |encoder|D[4]~reg0        ; regout           ;
+; |encoder|D[4]~reg0     ; |encoder|Add1~22          ; cout0            ;
+; |encoder|D[4]~reg0     ; |encoder|Add1~22COUT1_100 ; cout1            ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~25          ; combout          ;
+; |encoder|D[5]~reg0     ; |encoder|D[5]~reg0        ; regout           ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~27          ; cout0            ;
+; |encoder|D[5]~reg0     ; |encoder|Add1~27COUT1_102 ; cout1            ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~30          ; combout          ;
+; |encoder|D[6]~reg0     ; |encoder|D[6]~reg0        ; regout           ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~32          ; cout0            ;
+; |encoder|D[6]~reg0     ; |encoder|Add1~32COUT1_104 ; cout1            ;
+; |encoder|D[7]~reg0     ; |encoder|Add1~35          ; combout          ;
+; |encoder|D[7]~reg0     ; |encoder|D[7]~reg0        ; regout           ;
+; |encoder|D[7]~reg0     ; |encoder|Add1~37          ; cout             ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~40          ; combout          ;
+; |encoder|D[8]~reg0     ; |encoder|D[8]~reg0        ; regout           ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~42          ; cout0            ;
+; |encoder|D[8]~reg0     ; |encoder|Add1~42COUT1_106 ; cout1            ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~45          ; combout          ;
+; |encoder|D[9]~reg0     ; |encoder|D[9]~reg0        ; regout           ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~47          ; cout0            ;
+; |encoder|D[9]~reg0     ; |encoder|Add1~47COUT1_108 ; cout1            ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~50          ; combout          ;
+; |encoder|D[10]~reg0    ; |encoder|D[10]~reg0       ; regout           ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~52          ; cout0            ;
+; |encoder|D[10]~reg0    ; |encoder|Add1~52COUT1_110 ; cout1            ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~55          ; combout          ;
+; |encoder|D[11]~reg0    ; |encoder|D[11]~reg0       ; regout           ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~57          ; cout0            ;
+; |encoder|D[11]~reg0    ; |encoder|Add1~57COUT1_112 ; cout1            ;
+; |encoder|D[12]~reg0    ; |encoder|Add1~60          ; combout          ;
+; |encoder|D[12]~reg0    ; |encoder|D[12]~reg0       ; regout           ;
+; |encoder|D[12]~reg0    ; |encoder|Add1~62          ; cout             ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~65          ; combout          ;
+; |encoder|D[13]~reg0    ; |encoder|D[13]~reg0       ; regout           ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~67          ; cout0            ;
+; |encoder|D[13]~reg0    ; |encoder|Add1~67COUT1_114 ; cout1            ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~70          ; combout          ;
+; |encoder|D[14]~reg0    ; |encoder|D[14]~reg0       ; regout           ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~72          ; cout0            ;
+; |encoder|D[14]~reg0    ; |encoder|Add1~72COUT1_116 ; cout1            ;
+; |encoder|D[15]~reg0    ; |encoder|Add1~75          ; combout          ;
+; |encoder|D[15]~reg0    ; |encoder|D[15]~reg0       ; regout           ;
+; |encoder|D[0]          ; |encoder|D[0]             ; padio            ;
+; |encoder|D[1]          ; |encoder|D[1]             ; padio            ;
+; |encoder|D[2]          ; |encoder|D[2]             ; padio            ;
+; |encoder|D[3]          ; |encoder|D[3]             ; padio            ;
+; |encoder|D[4]          ; |encoder|D[4]             ; padio            ;
+; |encoder|D[5]          ; |encoder|D[5]             ; padio            ;
+; |encoder|D[6]          ; |encoder|D[6]             ; padio            ;
+; |encoder|D[7]          ; |encoder|D[7]             ; padio            ;
+; |encoder|D[8]          ; |encoder|D[8]             ; padio            ;
+; |encoder|D[9]          ; |encoder|D[9]             ; padio            ;
+; |encoder|D[10]         ; |encoder|D[10]            ; padio            ;
+; |encoder|D[11]         ; |encoder|D[11]            ; padio            ;
+; |encoder|D[12]         ; |encoder|D[12]            ; padio            ;
+; |encoder|D[13]         ; |encoder|D[13]            ; padio            ;
+; |encoder|D[14]         ; |encoder|D[14]            ; padio            ;
+; |encoder|D[15]         ; |encoder|D[15]            ; padio            ;
+; |encoder|temp[4]       ; |encoder|temp[4]          ; padio            ;
+; |encoder|temp[5]       ; |encoder|temp[5]          ; padio            ;
+; |encoder|temp[6]       ; |encoder|temp[6]          ; padio            ;
+; |encoder|temp[7]       ; |encoder|temp[7]          ; padio            ;
+; |encoder|temp[8]       ; |encoder|temp[8]          ; padio            ;
+; |encoder|temp[9]       ; |encoder|temp[9]          ; padio            ;
+; |encoder|temp[10]      ; |encoder|temp[10]         ; padio            ;
+; |encoder|temp[11]      ; |encoder|temp[11]         ; padio            ;
+; |encoder|temp[12]      ; |encoder|temp[12]         ; padio            ;
+; |encoder|temp[13]      ; |encoder|temp[13]         ; padio            ;
+; |encoder|temp[14]      ; |encoder|temp[14]         ; padio            ;
+; |encoder|temp[15]      ; |encoder|temp[15]         ; padio            ;
++------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Dec 20 23:41:21 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off encoder -c encoder
+Info: Using vector source file "D:/HeThong_DieuKhienNhung_Test_bai/encoder/encoder.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      43.82 %
+Info: Number of transitions in simulation is 665629
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Wed Dec 20 23:41:24 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

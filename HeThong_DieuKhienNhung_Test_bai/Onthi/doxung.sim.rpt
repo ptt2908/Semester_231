@@ -1,0 +1,381 @@
+Simulator report for doxung
+Fri Dec 22 16:26:17 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 10.0 ms       ;
+; Simulation Netlist Size     ; 85 nodes      ;
+; Simulation Coverage         ;      33.59 %  ;
+; Total Number of Transitions ; 88958         ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270T144A5 ;
++-----------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      33.59 % ;
+; Total nodes checked                                 ; 85           ;
+; Total output ports checked                          ; 128          ;
+; Total output ports with complete 1/0-value coverage ; 43           ;
+; Total output ports with no 1/0-value coverage       ; 83           ;
+; Total output ports with no 1-value coverage         ; 84           ;
+; Total output ports with no 0-value coverage         ; 84           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |doxung|D[0]~reg0  ; |doxung|D[0]~reg0          ; regout           ;
+; |doxung|D[1]~reg0  ; |doxung|D[1]~reg0          ; regout           ;
+; |doxung|D[2]~reg0  ; |doxung|D[2]~reg0          ; regout           ;
+; |doxung|D[3]~reg0  ; |doxung|D[3]~reg0          ; regout           ;
+; |doxung|D[4]~reg0  ; |doxung|D[4]~reg0          ; regout           ;
+; |doxung|temp[0]    ; |doxung|temp[0]            ; regout           ;
+; |doxung|temp[0]    ; |doxung|temp[0]~1          ; cout0            ;
+; |doxung|temp[0]    ; |doxung|temp[0]~1COUT1_47  ; cout1            ;
+; |doxung|PREPULSEIN ; |doxung|cnt[0]~0           ; combout          ;
+; |doxung|PREPULSEIN ; |doxung|PREPULSEIN         ; regout           ;
+; |doxung|temp[0]~2  ; |doxung|temp[0]~2          ; combout          ;
+; |doxung|temp[1]    ; |doxung|temp[1]            ; regout           ;
+; |doxung|temp[1]    ; |doxung|temp[1]~4          ; cout0            ;
+; |doxung|temp[1]    ; |doxung|temp[1]~4COUT1_49  ; cout1            ;
+; |doxung|temp[2]    ; |doxung|temp[2]            ; regout           ;
+; |doxung|temp[2]    ; |doxung|temp[2]~6          ; cout             ;
+; |doxung|temp[3]    ; |doxung|temp[3]            ; regout           ;
+; |doxung|temp[3]    ; |doxung|temp[3]~8COUT1_51  ; cout1            ;
+; |doxung|temp[4]    ; |doxung|temp[4]            ; regout           ;
+; |doxung|temp[4]    ; |doxung|temp[4]~10COUT1_53 ; cout1            ;
+; |doxung|temp[5]    ; |doxung|temp[5]            ; regout           ;
+; |doxung|temp[5]    ; |doxung|temp[5]~12COUT1_55 ; cout1            ;
+; |doxung|temp[6]    ; |doxung|temp[6]            ; regout           ;
+; |doxung|temp[6]    ; |doxung|temp[6]~14COUT1_57 ; cout1            ;
+; |doxung|temp[7]    ; |doxung|temp[7]            ; regout           ;
+; |doxung|temp[7]    ; |doxung|temp[7]~16         ; cout             ;
+; |doxung|temp[8]    ; |doxung|temp[8]            ; regout           ;
+; |doxung|temp[8]    ; |doxung|temp[8]~18         ; cout0            ;
+; |doxung|temp[9]    ; |doxung|temp[9]            ; regout           ;
+; |doxung|temp[9]    ; |doxung|temp[9]~20         ; cout0            ;
+; |doxung|temp[10]   ; |doxung|temp[10]           ; regout           ;
+; |doxung|temp[10]   ; |doxung|temp[10]~22        ; cout0            ;
+; |doxung|temp[11]   ; |doxung|temp[11]           ; regout           ;
+; |doxung|temp[11]   ; |doxung|temp[11]~24        ; cout0            ;
+; |doxung|temp[12]   ; |doxung|temp[12]           ; regout           ;
+; |doxung|temp[12]   ; |doxung|temp[12]~26        ; cout             ;
+; |doxung|clk        ; |doxung|clk~corein         ; combout          ;
+; |doxung|PULSEIN    ; |doxung|PULSEIN~corein     ; combout          ;
+; |doxung|D[0]       ; |doxung|D[0]               ; padio            ;
+; |doxung|D[1]       ; |doxung|D[1]               ; padio            ;
+; |doxung|D[2]       ; |doxung|D[2]               ; padio            ;
+; |doxung|D[3]       ; |doxung|D[3]               ; padio            ;
+; |doxung|D[4]       ; |doxung|D[4]               ; padio            ;
++--------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++---------------------+-----------------------------+------------------+
+; Node Name           ; Output Port Name            ; Output Port Type ;
++---------------------+-----------------------------+------------------+
+; |doxung|D[5]~reg0   ; |doxung|D[5]~reg0           ; regout           ;
+; |doxung|D[6]~reg0   ; |doxung|D[6]~reg0           ; regout           ;
+; |doxung|D[7]~reg0   ; |doxung|D[7]~reg0           ; regout           ;
+; |doxung|D[8]~reg0   ; |doxung|D[8]~reg0           ; regout           ;
+; |doxung|D[9]~reg0   ; |doxung|D[9]~reg0           ; regout           ;
+; |doxung|D[10]~reg0  ; |doxung|D[10]~reg0          ; regout           ;
+; |doxung|D[11]~reg0  ; |doxung|D[11]~reg0          ; regout           ;
+; |doxung|D[12]~reg0  ; |doxung|D[12]~reg0          ; regout           ;
+; |doxung|D[13]~reg0  ; |doxung|D[13]~reg0          ; regout           ;
+; |doxung|D[14]~reg0  ; |doxung|D[14]~reg0          ; regout           ;
+; |doxung|D[15]~reg0  ; |doxung|D[15]~reg0          ; regout           ;
+; |doxung|cnt[0]~reg0 ; |doxung|cnt[0]~reg0         ; regout           ;
+; |doxung|cnt[1]~reg0 ; |doxung|cnt[1]~reg0         ; regout           ;
+; |doxung|cnt[2]~reg0 ; |doxung|cnt[2]~reg0         ; regout           ;
+; |doxung|cnt[3]~reg0 ; |doxung|cnt[3]~reg0         ; regout           ;
+; |doxung|cnt[4]~reg0 ; |doxung|cnt[4]~reg0         ; regout           ;
+; |doxung|cnt[5]~reg0 ; |doxung|cnt[5]~reg0         ; regout           ;
+; |doxung|cnt[6]~reg0 ; |doxung|cnt[6]~reg0         ; regout           ;
+; |doxung|cnt[7]~reg0 ; |doxung|cnt[7]~reg0         ; regout           ;
+; |doxung|cnt[8]~reg0 ; |doxung|cnt[8]~reg0         ; regout           ;
+; |doxung|Add1~0      ; |doxung|Add1~0              ; combout          ;
+; |doxung|Add1~0      ; |doxung|Add1~2              ; cout0            ;
+; |doxung|Add1~0      ; |doxung|Add1~2COUT1_56      ; cout1            ;
+; |doxung|Add1~5      ; |doxung|Add1~5              ; combout          ;
+; |doxung|Add1~5      ; |doxung|Add1~7              ; cout0            ;
+; |doxung|Add1~5      ; |doxung|Add1~7COUT1_54      ; cout1            ;
+; |doxung|Add1~10     ; |doxung|Add1~10             ; combout          ;
+; |doxung|Add1~10     ; |doxung|Add1~12             ; cout0            ;
+; |doxung|Add1~10     ; |doxung|Add1~12COUT1_58     ; cout1            ;
+; |doxung|Add1~15     ; |doxung|Add1~15             ; combout          ;
+; |doxung|Add1~15     ; |doxung|Add1~17             ; cout0            ;
+; |doxung|Add1~15     ; |doxung|Add1~17COUT1_60     ; cout1            ;
+; |doxung|Equal1~0    ; |doxung|Equal1~0            ; combout          ;
+; |doxung|Add1~20     ; |doxung|Add1~20             ; combout          ;
+; |doxung|Add1~20     ; |doxung|Add1~22             ; cout             ;
+; |doxung|Add1~25     ; |doxung|Add1~25             ; combout          ;
+; |doxung|Add1~25     ; |doxung|Add1~27             ; cout0            ;
+; |doxung|Add1~25     ; |doxung|Add1~27COUT1_62     ; cout1            ;
+; |doxung|Add1~30     ; |doxung|Add1~30             ; combout          ;
+; |doxung|Add1~30     ; |doxung|Add1~32             ; cout0            ;
+; |doxung|Add1~30     ; |doxung|Add1~32COUT1_64     ; cout1            ;
+; |doxung|Add1~35     ; |doxung|Add1~35             ; combout          ;
+; |doxung|Add1~35     ; |doxung|Add1~37             ; cout0            ;
+; |doxung|Add1~35     ; |doxung|Add1~37COUT1_66     ; cout1            ;
+; |doxung|Equal1~1    ; |doxung|Equal1~1            ; combout          ;
+; |doxung|Add1~40     ; |doxung|Add1~40             ; combout          ;
+; |doxung|Equal1~2    ; |doxung|Equal1~2            ; combout          ;
+; |doxung|temp[3]     ; |doxung|temp[3]~8           ; cout0            ;
+; |doxung|temp[4]     ; |doxung|temp[4]~10          ; cout0            ;
+; |doxung|temp[5]     ; |doxung|temp[5]~12          ; cout0            ;
+; |doxung|temp[6]     ; |doxung|temp[6]~14          ; cout0            ;
+; |doxung|temp[8]     ; |doxung|temp[8]~18COUT1_59  ; cout1            ;
+; |doxung|temp[9]     ; |doxung|temp[9]~20COUT1_61  ; cout1            ;
+; |doxung|temp[10]    ; |doxung|temp[10]~22COUT1_63 ; cout1            ;
+; |doxung|temp[11]    ; |doxung|temp[11]~24COUT1_65 ; cout1            ;
+; |doxung|temp[13]    ; |doxung|temp[13]~28         ; cout0            ;
+; |doxung|temp[13]    ; |doxung|temp[13]~28COUT1_67 ; cout1            ;
+; |doxung|temp[14]    ; |doxung|temp[14]            ; regout           ;
+; |doxung|temp[14]    ; |doxung|temp[14]~30         ; cout0            ;
+; |doxung|temp[14]    ; |doxung|temp[14]~30COUT1_69 ; cout1            ;
+; |doxung|temp[15]    ; |doxung|temp[15]            ; regout           ;
+; |doxung|cnt[0]~1    ; |doxung|cnt[0]~1            ; combout          ;
+; |doxung|MODE[0]     ; |doxung|MODE[0]~corein      ; combout          ;
+; |doxung|MODE[1]     ; |doxung|MODE[1]~corein      ; combout          ;
+; |doxung|D[5]        ; |doxung|D[5]                ; padio            ;
+; |doxung|D[6]        ; |doxung|D[6]                ; padio            ;
+; |doxung|D[7]        ; |doxung|D[7]                ; padio            ;
+; |doxung|D[8]        ; |doxung|D[8]                ; padio            ;
+; |doxung|D[9]        ; |doxung|D[9]                ; padio            ;
+; |doxung|D[10]       ; |doxung|D[10]               ; padio            ;
+; |doxung|D[11]       ; |doxung|D[11]               ; padio            ;
+; |doxung|D[12]       ; |doxung|D[12]               ; padio            ;
+; |doxung|D[13]       ; |doxung|D[13]               ; padio            ;
+; |doxung|D[14]       ; |doxung|D[14]               ; padio            ;
+; |doxung|D[15]       ; |doxung|D[15]               ; padio            ;
+; |doxung|cnt[0]      ; |doxung|cnt[0]              ; padio            ;
+; |doxung|cnt[1]      ; |doxung|cnt[1]              ; padio            ;
+; |doxung|cnt[2]      ; |doxung|cnt[2]              ; padio            ;
+; |doxung|cnt[3]      ; |doxung|cnt[3]              ; padio            ;
+; |doxung|cnt[4]      ; |doxung|cnt[4]              ; padio            ;
+; |doxung|cnt[5]      ; |doxung|cnt[5]              ; padio            ;
+; |doxung|cnt[6]      ; |doxung|cnt[6]              ; padio            ;
+; |doxung|cnt[7]      ; |doxung|cnt[7]              ; padio            ;
+; |doxung|cnt[8]      ; |doxung|cnt[8]              ; padio            ;
++---------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                             ;
++---------------------+-----------------------------+------------------+
+; Node Name           ; Output Port Name            ; Output Port Type ;
++---------------------+-----------------------------+------------------+
+; |doxung|D[5]~reg0   ; |doxung|D[5]~reg0           ; regout           ;
+; |doxung|D[6]~reg0   ; |doxung|D[6]~reg0           ; regout           ;
+; |doxung|D[7]~reg0   ; |doxung|D[7]~reg0           ; regout           ;
+; |doxung|D[8]~reg0   ; |doxung|D[8]~reg0           ; regout           ;
+; |doxung|D[9]~reg0   ; |doxung|D[9]~reg0           ; regout           ;
+; |doxung|D[10]~reg0  ; |doxung|D[10]~reg0          ; regout           ;
+; |doxung|D[11]~reg0  ; |doxung|D[11]~reg0          ; regout           ;
+; |doxung|D[12]~reg0  ; |doxung|D[12]~reg0          ; regout           ;
+; |doxung|D[13]~reg0  ; |doxung|D[13]~reg0          ; regout           ;
+; |doxung|D[14]~reg0  ; |doxung|D[14]~reg0          ; regout           ;
+; |doxung|D[15]~reg0  ; |doxung|D[15]~reg0          ; regout           ;
+; |doxung|cnt[0]~reg0 ; |doxung|cnt[0]~reg0         ; regout           ;
+; |doxung|cnt[1]~reg0 ; |doxung|cnt[1]~reg0         ; regout           ;
+; |doxung|cnt[2]~reg0 ; |doxung|cnt[2]~reg0         ; regout           ;
+; |doxung|cnt[3]~reg0 ; |doxung|cnt[3]~reg0         ; regout           ;
+; |doxung|cnt[4]~reg0 ; |doxung|cnt[4]~reg0         ; regout           ;
+; |doxung|cnt[5]~reg0 ; |doxung|cnt[5]~reg0         ; regout           ;
+; |doxung|cnt[6]~reg0 ; |doxung|cnt[6]~reg0         ; regout           ;
+; |doxung|cnt[7]~reg0 ; |doxung|cnt[7]~reg0         ; regout           ;
+; |doxung|cnt[8]~reg0 ; |doxung|cnt[8]~reg0         ; regout           ;
+; |doxung|Add1~0      ; |doxung|Add1~0              ; combout          ;
+; |doxung|Add1~0      ; |doxung|Add1~2              ; cout0            ;
+; |doxung|Add1~0      ; |doxung|Add1~2COUT1_56      ; cout1            ;
+; |doxung|Add1~5      ; |doxung|Add1~5              ; combout          ;
+; |doxung|Add1~5      ; |doxung|Add1~7              ; cout0            ;
+; |doxung|Add1~5      ; |doxung|Add1~7COUT1_54      ; cout1            ;
+; |doxung|Add1~10     ; |doxung|Add1~10             ; combout          ;
+; |doxung|Add1~10     ; |doxung|Add1~12             ; cout0            ;
+; |doxung|Add1~10     ; |doxung|Add1~12COUT1_58     ; cout1            ;
+; |doxung|Add1~15     ; |doxung|Add1~15             ; combout          ;
+; |doxung|Add1~15     ; |doxung|Add1~17             ; cout0            ;
+; |doxung|Add1~15     ; |doxung|Add1~17COUT1_60     ; cout1            ;
+; |doxung|Equal1~0    ; |doxung|Equal1~0            ; combout          ;
+; |doxung|Add1~20     ; |doxung|Add1~20             ; combout          ;
+; |doxung|Add1~20     ; |doxung|Add1~22             ; cout             ;
+; |doxung|Add1~25     ; |doxung|Add1~25             ; combout          ;
+; |doxung|Add1~25     ; |doxung|Add1~27             ; cout0            ;
+; |doxung|Add1~25     ; |doxung|Add1~27COUT1_62     ; cout1            ;
+; |doxung|Add1~30     ; |doxung|Add1~30             ; combout          ;
+; |doxung|Add1~30     ; |doxung|Add1~32             ; cout0            ;
+; |doxung|Add1~30     ; |doxung|Add1~32COUT1_64     ; cout1            ;
+; |doxung|Add1~35     ; |doxung|Add1~35             ; combout          ;
+; |doxung|Add1~35     ; |doxung|Add1~37             ; cout0            ;
+; |doxung|Add1~35     ; |doxung|Add1~37COUT1_66     ; cout1            ;
+; |doxung|Equal1~1    ; |doxung|Equal1~1            ; combout          ;
+; |doxung|Add1~40     ; |doxung|Add1~40             ; combout          ;
+; |doxung|Equal1~2    ; |doxung|Equal1~2            ; combout          ;
+; |doxung|temp[3]     ; |doxung|temp[3]~8           ; cout0            ;
+; |doxung|temp[4]     ; |doxung|temp[4]~10          ; cout0            ;
+; |doxung|temp[5]     ; |doxung|temp[5]~12          ; cout0            ;
+; |doxung|temp[6]     ; |doxung|temp[6]~14          ; cout0            ;
+; |doxung|temp[8]     ; |doxung|temp[8]~18COUT1_59  ; cout1            ;
+; |doxung|temp[9]     ; |doxung|temp[9]~20COUT1_61  ; cout1            ;
+; |doxung|temp[10]    ; |doxung|temp[10]~22COUT1_63 ; cout1            ;
+; |doxung|temp[11]    ; |doxung|temp[11]~24COUT1_65 ; cout1            ;
+; |doxung|temp[13]    ; |doxung|temp[13]            ; regout           ;
+; |doxung|temp[13]    ; |doxung|temp[13]~28         ; cout0            ;
+; |doxung|temp[14]    ; |doxung|temp[14]            ; regout           ;
+; |doxung|temp[14]    ; |doxung|temp[14]~30         ; cout0            ;
+; |doxung|temp[14]    ; |doxung|temp[14]~30COUT1_69 ; cout1            ;
+; |doxung|temp[15]    ; |doxung|temp[15]            ; regout           ;
+; |doxung|cnt[0]~1    ; |doxung|cnt[0]~1            ; combout          ;
+; |doxung|MODE[0]     ; |doxung|MODE[0]~corein      ; combout          ;
+; |doxung|MODE[1]     ; |doxung|MODE[1]~corein      ; combout          ;
+; |doxung|D[5]        ; |doxung|D[5]                ; padio            ;
+; |doxung|D[6]        ; |doxung|D[6]                ; padio            ;
+; |doxung|D[7]        ; |doxung|D[7]                ; padio            ;
+; |doxung|D[8]        ; |doxung|D[8]                ; padio            ;
+; |doxung|D[9]        ; |doxung|D[9]                ; padio            ;
+; |doxung|D[10]       ; |doxung|D[10]               ; padio            ;
+; |doxung|D[11]       ; |doxung|D[11]               ; padio            ;
+; |doxung|D[12]       ; |doxung|D[12]               ; padio            ;
+; |doxung|D[13]       ; |doxung|D[13]               ; padio            ;
+; |doxung|D[14]       ; |doxung|D[14]               ; padio            ;
+; |doxung|D[15]       ; |doxung|D[15]               ; padio            ;
+; |doxung|cnt[0]      ; |doxung|cnt[0]              ; padio            ;
+; |doxung|cnt[1]      ; |doxung|cnt[1]              ; padio            ;
+; |doxung|cnt[2]      ; |doxung|cnt[2]              ; padio            ;
+; |doxung|cnt[3]      ; |doxung|cnt[3]              ; padio            ;
+; |doxung|cnt[4]      ; |doxung|cnt[4]              ; padio            ;
+; |doxung|cnt[5]      ; |doxung|cnt[5]              ; padio            ;
+; |doxung|cnt[6]      ; |doxung|cnt[6]              ; padio            ;
+; |doxung|cnt[7]      ; |doxung|cnt[7]              ; padio            ;
+; |doxung|cnt[8]      ; |doxung|cnt[8]              ; padio            ;
++---------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 22 16:26:16 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off doxung -c doxung
+Info: Using vector source file "D:/HeThong_DieuKhienNhung_Test_bai/Onthi/doxung.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "precnt[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      33.59 %
+Info: Number of transitions in simulation is 88958
+Info: Quartus II Simulator was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Fri Dec 22 16:26:17 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,34 @@
+|do_dolechpha
+clk => temp[0].CLK
+clk => temp[1].CLK
+clk => temp[2].CLK
+clk => temp[3].CLK
+clk => temp[4].CLK
+clk => temp[5].CLK
+clk => temp[6].CLK
+clk => temp[7].CLK
+clk => D[0]~reg0.CLK
+clk => D[1]~reg0.CLK
+clk => D[2]~reg0.CLK
+clk => D[3]~reg0.CLK
+clk => D[4]~reg0.CLK
+clk => D[5]~reg0.CLK
+clk => D[6]~reg0.CLK
+clk => D[7]~reg0.CLK
+clk => en_cnt.CLK
+clk => pre_encB.CLK
+clk => pre_encA.CLK
+encA => pre_encA.DATAIN
+encA => Equal0.IN0
+encB => pre_encB.DATAIN
+encB => Equal1.IN0
+D[0] <= D[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= D[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= D[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= D[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[6] <= D[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[7] <= D[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

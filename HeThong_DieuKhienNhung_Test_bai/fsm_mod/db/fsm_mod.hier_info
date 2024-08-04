@@ -1,0 +1,9 @@
+|fsm_mod
+q1 <= q1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q0 <= q0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+in => q0.IN1
+in => q1~reg0.DATAIN
+clk => q0~reg0.CLK
+clk => q1~reg0.CLK
+
+
